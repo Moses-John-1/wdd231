@@ -1,0 +1,91 @@
+@media only screen and (min-width: 38rem) {
+
+    /**************** GENERAL LAYOUT ****************/
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /**************** HEADER ****************/
+    header {
+        grid-template-columns: 32px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /**************** NAVIGATION ****************/
+    .navigation {
+        display: block;
+        background-color: var(--hover-bg);
+        border-bottom: solid 1px var(--border-color);
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+        padding: 1rem 20px;
+    }
+
+    .navigation a.active {
+        background-color: transparent;
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+    .navigation a:hover {
+        background-color: white;
+    }
+
+    /**************** ABOUT & PHOTO SECTION ****************/
+    .about-photo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .about-me {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student-photo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .student-photo img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+    }
+
+    /**************** FILTER BUTTONS ****************/
+    .filter-buttons {
+        justify-content: center;
+    }
+
+    /**************** COURSE CARDS ****************/
+    .course-cards {
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .course-card {
+        width: 120px;
+    }
+}

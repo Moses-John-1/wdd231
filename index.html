@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The landing page of my home page">
+    <meta name="author" content="Moses John">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/home-page.js" defer></script>
 </head>
+
 <body>
-    moses john
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="64" height="64">
+        <span>Moses John</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="about-photo-container">
+
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p> <em>
+                    I’m Moses John, proudly from Akwa Ibom, Nigeria, and currently living in Lagos. I work full-time as an Aviation GSE
+                    Operative while actively transitioning into tech as a frontend developer. I’m studying software development at
+                    BYU-Idaho, building real projects, and sharpening my skills every day.
+                    <br>
+                    <br>
+                    Beyond tech and aviation, I run a growing business and have a deep passion for agriculture, investing, and building
+                    long-term wealth. I enjoy solving real problems and finding smart ways to grow — in business, tech, and life.
+                    <br>
+                    <br>
+                    In my free time, you’ll find me exploring market trends, trading, and learning about personal finance. My goal is
+                    simple: build freedom, grow steadily, and live life on my own terms.
+                    </em>
+                </p>
+            </section>
+
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="profile Photo" width="400" height="400">
+            </section>
+
+        </div>
+
+        <section class="web-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-cards" class="course-cards">
+        
+            </div>
+
+            <p>Total credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/moses-john-3848b4192/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+            <a href="https://github.com/Moses-John-1" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="24" height="24">
+            </a>
+            <a href="https://wa.me/2348146126762" target="_blank">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="24" height="24">
+            </a>
+        </div>
+
+        <p>© <span id="year"></span> Moses John | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
