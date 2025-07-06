@@ -2,7 +2,7 @@
 :root {
     --primary-color: #0e1ac8;
     --accent-color: #6bf5ff;
-    --completed-bg: #d9f5d1;
+    --completed-bg: #6bf5ff;
     --incomplete-bg: #f9d6d5;
     --hover-bg: #eee;
     --border-color: #ddd;
@@ -100,7 +100,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: var(--hover-bg);
+    background-color: #6bf5ff;
 }
 
 /**************** MAIN ****************/

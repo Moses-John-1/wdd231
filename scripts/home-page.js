@@ -97,7 +97,7 @@ function displayCourses(courseList) {
             courseBox.innerHTML = `&#10003; ${course.subject} ${course.number}`;
         } else {
             courseBox.classList.add('incomplete');
-            courseBox.innerHTML = `&#10060; ${course.subject} ${course.number}`;
+            courseBox.innerHTML  = `&#10060; ${course.subject} ${course.number}`;
         }
 
         courseContainer.appendChild(courseBox);
@@ -142,3 +142,15 @@ document.getElementById('wdd').addEventListener('click', () => {
 
 // Set "All" as Active Initially
 setActiveButton('all');
+
+// Wayfinding - Highlight Active Navigation Link
+const currentPage = window.location.href;
+const navLinks = document.querySelectorAll('.navigation a');
+
+navLinks.forEach(link => {
+    if (link.href === currentPage) {
+        link.classList.add('active');
+    } else {
+        link.classList.remove('active');
+    }
+});

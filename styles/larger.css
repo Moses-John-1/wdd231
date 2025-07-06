@@ -30,7 +30,7 @@
     }
 
     .navigation a {
-        border: none;
+        border: solid 1px var(--border-color);
         padding: 1rem 20px;
     }
 
@@ -40,7 +40,7 @@
     }
 
     .navigation a:hover {
-        background-color: white;
+        background-color: #6bf5ff;
     }
 
     /**************** ABOUT & PHOTO SECTION ****************/
