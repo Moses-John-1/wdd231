@@ -1,0 +1,35 @@
+{
+    "family_name": "Esther",
+    "move_in_date": "12-08-2023",
+    "family_number_of_people": 5,
+    "visted_by_bishopric": true,
+    "family_member informal":[
+        {
+            "name": "Esther John",
+            "gender": "female",
+            "birthdate": "02-07-1970"
+        },
+        {
+            "name": "Blesing John",
+            "gender": "female",
+            "birthdate": "02-07-1992"
+        },
+        {
+            "name": "Saviour John",
+            "gender": "male",
+            "birthdate": "01-06-1994"
+        },
+        {
+            "name": "Moses John",
+            "gender": "male",
+            "birthdate": "14-12-1997"
+        },
+        {
+            "name": "Blesing John",
+            "gender": "female",
+            "birthdate": "02-07-1992"
+        }
+    
+    ]
+
+}
