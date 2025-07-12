@@ -1,0 +1,65 @@
+[
+    {
+        "name": "University of Uyo Teaching Hospital",
+        "address": "University Of Uyo Teaching Hospital, Abak Road, Uyo",
+        "phone": "+234 803 734 3628",
+        "website": "https://www.uuthuyo.net",
+        "image": "uuthuyo.jpg",
+        "membership": 1,
+        "description": "A teaching hospital for medical training and services."
+    },
+    {
+        "name": "Champion Breweries Plc",
+        "address": "Industrial Layout, Aka Offot, Uyo, Akwa Ibom",
+        "phone": "+234 807 229 0942",
+        "website": "https://www.championbreweries.com",
+        "image": "championbreweries.png",
+        "membership": 2,
+        "description": "A major brewery in Uyo producing Champion Lager and Champ Malta."
+    },
+    {
+        "name": "Ibom Multi-Specialty Hospital",
+        "address": "Uyo, Ikot Ekpene Road, Uyo, Akwa Ibom",
+        "phone": "+234 802 181 4674",
+        "website": "http://www.ibommultispecialtyhospital.org",
+        "image": "Multi-Specialty.png",
+        "membership": 3,
+        "description": "A modern hospital offering advanced healthcare services."
+    },
+    {
+        "name": "Ibom Air",
+        "address": "Victor Attah International Airport; Udo Udoma Ave, Uyo, Akwa Ibom",
+        "phone": "+234 814 272 1159",
+        "website": "https://www.ibomair.com",
+        "image": "ibom-air.png",
+        "membership": 3,
+        "description": "Akwa Ibom State-owned domestic airline."
+    },
+    {
+        "name": "Four Points by Sheraton Ikot Ekpene",
+        "address": "Plot A342, Raffia City Plaza, Ikot Ekpene, Akwa Ibom",
+        "phone": "+234 803 900 8010",
+        "website": "https://www.marriott.com/quofp",
+        "image": "four-point.png",
+        "membership": 3,
+        "description": "Modern Marriott-brand hotel with pool and event spaces."
+    },
+    {
+        "name": "Royal Nefsea International Schools",
+        "address": "Ikot Ntuen Nsit (behind International Stadium), Akwa Ibom",
+        "phone": "+234 705 555 7924",
+        "website": "https://royalnefsea.org",
+        "image": "royal_nefsea.jpg",
+        "membership": 1,
+        "description": "Private international school near Uyo stadium."
+    },
+    {
+        "name": "Akwa Ibom Transport Company (AKTC)",
+        "address": "Uyo, Akwa Ibom, Nigeria",
+        "phone": "+234 812 773 7631",
+        "website": "https://aktc.com.ng/",
+        "image": "aktc.svg",
+        "membership": 2,
+        "description": "State-owned bus & cargo transport company."
+    }
+]
