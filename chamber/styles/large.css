@@ -75,28 +75,42 @@
     .footer-meta {
         text-align: right;
     }
+/* Zebra List View - No Images, Single-Line Format */
+.directory.list-view .member-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+    gap: 1rem;
+}
 
+/* Zebra striping */
 .directory.list-view .member-card:nth-child(odd) {
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
 }
 
 .directory.list-view .member-card:nth-child(even) {
     background-color: #ffffff;
 }
 
-.directory.list-view .member-card {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
+/* Hide images in list view */
 .directory.list-view .member-card img {
-    width: 120px;
-    height: auto;
-    border-radius: 10px;
+    display: none;
 }
 
+/* Make the info line-based */
 .directory.list-view .member-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     flex: 1;
+    font-size: 0.95rem;
 }
+
+.directory.list-view .member-info>* {
+    margin: 0;
 }
