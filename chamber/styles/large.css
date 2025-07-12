@@ -1,4 +1,3 @@
-
 @media (min-width: 768px) {
 
     /* Header */
@@ -75,42 +74,44 @@
     .footer-meta {
         text-align: right;
     }
-/* Zebra List View - No Images, Single-Line Format */
-.directory.list-view .member-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 0.75rem 1rem;
-    border-radius: 0;
-    border-bottom: 1px solid #ddd;
-    gap: 1rem;
-}
 
-/* Zebra striping */
-.directory.list-view .member-card:nth-child(odd) {
-    background-color: #f9f9f9;
-}
+    /* Zebra List View - No Images, Single-Line Format */
+    .directory.list-view .member-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 0.75rem 1rem;
+        border-radius: 0;
+        border-bottom: 1px solid #ddd;
+        gap: 1rem;
+    }
 
-.directory.list-view .member-card:nth-child(even) {
-    background-color: #ffffff;
-}
+    /* Zebra striping */
+    .directory.list-view .member-card:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
 
-/* Hide images in list view */
-.directory.list-view .member-card img {
-    display: none;
-}
+    .directory.list-view .member-card:nth-child(even) {
+        background-color: #ffffff;
+    }
 
-/* Make the info line-based */
-.directory.list-view .member-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    flex: 1;
-    font-size: 0.95rem;
-}
+    /* Hide images in list view */
+    .directory.list-view .member-card img {
+        display: none;
+    }
 
-.directory.list-view .member-info>* {
-    margin: 0;
+    /* Make the info line-based */
+    .directory.list-view .member-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        flex: 1;
+        font-size: 0.95rem;
+    }
+
+    .directory.list-view .member-info>* {
+        margin: 0;
+    }
 }
