@@ -53,7 +53,138 @@
     }
 
 
-    /* Footer Layout */
+
+    /* Zebra List View - No Images, Single-Line Format */
+    .directory.list-view .member-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 0.75rem 1rem;
+        border-radius: 0;
+        border-bottom: 1px solid #ddd;
+        gap: 1rem;
+    }
+
+
+    .directory.list-view .member-card:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    .directory.list-view .member-card:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    /* Hide images in list view */
+    .directory.list-view .member-card img {
+        display: none;
+    }
+
+
+    .directory.list-view .member-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        flex: 1;
+        font-size: 0.95rem;
+    }
+
+    .directory.list-view .member-info>* {
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .logo-title h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Hide hamburger menu on desktop */
+    #hamburger {
+        display: none;
+    }
+
+    #nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    #nav-menu a {
+        color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 4px;
+    }
+
+    #nav-menu a.active,
+    #nav-menu a:hover {
+        background-color: #F37022;
+    }
+
+    /* hOME PAGE SECTION*/
+    .section-one {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .section-one .events {
+        flex: 2;
+    }
+
+
+    .section-one .weather,
+    .section-one .weather-forecast {
+        flex: 1;
+    }
+
+    .section-one section:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+
+
+    .spotlight-container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .spotlight-card {
+        width: 31%;
+        padding: 0.1rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .spotlight-card img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
@@ -73,45 +204,5 @@
 
     .footer-meta {
         text-align: right;
-    }
-
-    /* Zebra List View - No Images, Single-Line Format */
-    .directory.list-view .member-card {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        padding: 0.75rem 1rem;
-        border-radius: 0;
-        border-bottom: 1px solid #ddd;
-        gap: 1rem;
-    }
-
-    /* Zebra striping */
-    .directory.list-view .member-card:nth-child(odd) {
-        background-color: #f9f9f9;
-    }
-
-    .directory.list-view .member-card:nth-child(even) {
-        background-color: #ffffff;
-    }
-
-    /* Hide images in list view */
-    .directory.list-view .member-card img {
-        display: none;
-    }
-
-    /* Make the info line-based */
-    .directory.list-view .member-info {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        flex: 1;
-        font-size: 0.95rem;
-    }
-
-    .directory.list-view .member-info>* {
-        margin: 0;
     }
 }
