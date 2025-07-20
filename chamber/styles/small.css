@@ -358,11 +358,12 @@ header {
     background-color: #f9f9f9;
 }
 
-.spotlights h2 {
-    color: #007A3D;
-    font-size: 0.1rem;
+.spotlights h1 {
+    color: black;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
+    margin-top: -15px;
 }
 
 .spotlight-container {
