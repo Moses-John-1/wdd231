@@ -1,4 +1,4 @@
-// Responsive Navigation
+// ========== RESPONSIVE NAVIGATION ==========
 const hamButton = document.querySelector('#ham-btn');
 const navigation = document.querySelector('#nav-bar');
 
@@ -7,13 +7,11 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('show');
 });
 
-// Dynamically Set Current Year
+// ========== YEAR AND LAST MODIFIED ==========
 document.getElementById('year').textContent = new Date().getFullYear();
-
-// Display Last Modified Date
 document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
 
-// Full Course Data Array
+// ========== COURSE DATA ==========
 const courses = [
     {
         subject: 'CSE',
@@ -31,7 +29,7 @@ const courses = [
         title: 'Web Fundamentals',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming.',
         technology: ['HTML', 'CSS'],
         completed: true
     },
@@ -41,7 +39,7 @@ const courses = [
         title: 'Programming with Functions',
         credits: 2,
         certificate: 'Web and Computer Programming',
-        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions.',
         technology: ['Python'],
         completed: true
     },
@@ -77,15 +75,46 @@ const courses = [
     }
 ];
 
-// Select DOM elements
+// ========== SELECT DOM ELEMENTS ==========
 const courseContainer = document.getElementById('course-cards');
 const totalCreditsSpan = document.getElementById('total-credits');
+const courseDetails = document.getElementById('courseDetails');
 
-// Display Courses Function
+// ========== DISPLAY COURSE DETAILS ==========
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" class="close-btn">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+// Close modal when clicking outside it
+courseDetails.addEventListener('click', (event) => {
+    const rect = courseDetails.getBoundingClientRect();
+    if (
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom
+    ) {
+        courseDetails.close();
+    }
+});
+
+// ========== DISPLAY COURSES ==========
 function displayCourses(courseList) {
     courseContainer.innerHTML = '';
 
-    // Calculate total credits using reduce
     let totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
 
     courseList.forEach(course => {
@@ -94,11 +123,18 @@ function displayCourses(courseList) {
 
         if (course.completed) {
             courseBox.classList.add('completed');
-            courseBox.innerHTML = `&#10003; ${course.subject} ${course.number}`;
         } else {
             courseBox.classList.add('incomplete');
-            courseBox.innerHTML  = `&#10060; ${course.subject} ${course.number}`;
         }
+
+        courseBox.innerHTML = `
+            ${course.completed ? '&#10003;' : '&#10060;'} ${course.subject} ${course.number}
+        `;
+
+        // Show details on click
+        courseBox.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
 
         courseContainer.appendChild(courseBox);
     });
@@ -106,11 +142,10 @@ function displayCourses(courseList) {
     totalCreditsSpan.textContent = totalCredits;
 }
 
-// Initial Display: All Courses
+// ========== FILTER BUTTONS ==========
 displayCourses(courses);
 
-// Active Button Management
-const buttons = document.querySelectorAll('.filter-btn');
+const buttons = document.querySelectorAll('.filter-buttons button');
 
 function setActiveButton(activeId) {
     buttons.forEach(button => {
@@ -122,7 +157,6 @@ function setActiveButton(activeId) {
     });
 }
 
-// Filter Buttons Event Listeners
 document.getElementById('all').addEventListener('click', () => {
     displayCourses(courses);
     setActiveButton('all');
@@ -140,10 +174,9 @@ document.getElementById('wdd').addEventListener('click', () => {
     setActiveButton('wdd');
 });
 
-// Set "All" as Active Initially
 setActiveButton('all');
 
-// Wayfinding - Highlight Active Navigation Link
+// ========== WAYFINDING NAVIGATION ==========
 const currentPage = window.location.href;
 const navLinks = document.querySelectorAll('.navigation a');
 

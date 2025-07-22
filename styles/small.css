@@ -114,6 +114,23 @@ h1 {
     margin-bottom: 20px;
 }
 
+dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    max-width: 400px;
+    width: 90%;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+}
 /* About and Photo Section */
 .about-photo-container {
     display: flex;
