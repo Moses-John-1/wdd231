@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amination effect</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            /* flex-direction: column; */
+            border: 2px solid red;
+            height: 50vh;
+            width: 50vw;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .inner1 {
+            border: 3px solid blue;
+            height: 100px;
+            width: 100px;
+            margin-top: auto;
+        }
+
+        .inner2 {
+            border: 3px solid black;
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+        }
+
+        .inner3 {
+            border: 3px solid green;
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            border-radius: 40%;
+            animation-name: glowing;
+            animation-duration: 2s;
+            animation-delay: -2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+            
+        
+        }
+        @keyframes glowing{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="inner1">
+        </div>
+        <div class="inner2"></div>
+        <div class="inner3"></div>
+    </div>
+</body>
+
+</html>
