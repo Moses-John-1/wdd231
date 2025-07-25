@@ -414,16 +414,25 @@ form {
     box-shadow: 0 0 15px rgba(0, 128, 0, 0.5);
 }
 
-figcaption {
-    text-align: center;
-    background-color: #f37022;
-    margin-bottom: 5px;
-    padding: 5px;
-    height: 50px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    color: black;
+.sub-heading {
+    color:#f37022;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100vw;
+
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 label {
