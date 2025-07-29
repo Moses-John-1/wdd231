@@ -11,7 +11,9 @@ h2 {
     font-family: 'Playfair Display', serif;
     color: #005b96;
 }
-
+img{
+    border: 1px solid #005b96;
+}
 h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
