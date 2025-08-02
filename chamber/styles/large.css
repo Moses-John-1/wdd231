@@ -18,8 +18,6 @@
         gap: 1rem;
     }
 
-
-
     /* Main Layout */
     .directory.grid-view {
         display: grid;
@@ -52,9 +50,6 @@
         flex: 1;
     }
 
-
-
-    /* Zebra List View - No Images, Single-Line Format */
     .directory.list-view .member-card {
         display: flex;
         flex-direction: row;
@@ -76,7 +71,6 @@
         background-color: #ffffff;
     }
 
-    /* Hide images in list view */
     .directory.list-view .member-card img {
         display: none;
     }
@@ -105,7 +99,7 @@
         font-size: 1.5rem;
     }
 
-    /* Hide hamburger menu on desktop */
+    
     #hamburger {
         display: none;
     }
@@ -180,7 +174,7 @@
     }
 
     /* JOIN PAGE */
-    .form-sec{
+    .form-sec {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -189,7 +183,8 @@
         margin: 2rem;
         flex-wrap: wrap;
     }
-    .card{
+
+    .card {
         margin-left: 5px;
         margin-right: 5px;
     }
@@ -202,30 +197,118 @@
         flex: 1 1 400px;
     }
 
-    /* Footer */
-    footer {
+    /* Discover page  */
+
+    #card-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
         padding: 2rem;
-        font-size: 1rem;
     }
 
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        text-align: left;
+    .location-card {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image address"
+            "button button";
+        grid-template-columns: 250px 1fr;
+        gap: 0.5rem 1rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
     }
 
-    .footer-contact,
-    .footer-social,
-    .footer-meta {
-        flex: 1;
+    .location-card h2 {
+        grid-area: title;
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0;
+        color: #007A3D;
     }
 
-    .footer-social {
-        text-align: center;
+    .location-card figure {
+        grid-area: image;
+        margin: 0;
     }
 
-    .footer-meta {
-        text-align: right;
+    .location-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
     }
+
+    .location-card p {
+        grid-area: desc;
+        font-size: 0.95rem;
+        margin: 0;
+        color: #333;
+    }
+
+    .location-address {
+        grid-area: address;
+        font-style: italic;
+        color: #555;
+        margin-top: 0.5rem;
+        display: block;
+    }
+
+
+    .location-card .discover-btn {
+        grid-area: button;
+        background-color: #005f2a;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-top: 10px;
+        justify-self: start;
+        transition: background-color 0.3s ease;
+    }
+
+    .location-card .discover-btn:hover {
+        background-color: #064221;
+    }
+
+    .location-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .location-card img:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+.footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-contact,
+.footer-social,
+.footer-meta {
+    flex: 1;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-meta {
+    text-align: right;
 }

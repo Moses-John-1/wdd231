@@ -2,60 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore the business directory of Uyo Chamber of Commerce." />
+    <meta name="description"
+        content="Discover Uyo: Explore key places of interest and learn more about the culture and business opportunities in Uyo, Akwa Ibom." />
     <meta name="author" content="Moses John" />
 
-    <meta property="og:title" content="Uyo Chamber of Commerce Directory" />
-    <meta property="og:description" content="Explore the business members of the Uyo Chamber of Commerce." />
+    <meta property="og:title" content="Discover Uyo | Chamber of Commerce" />
+    <meta property="og:description"
+        content="Discover historical, cultural and business attractions in Uyo, Akwa Ibom." />
     <meta property="og:image" content="https://moses-john-1.github.io/wdd231/chamber/images/uyo-chamber.jpg" />
-    <meta property="og:url" content="https://moses-john-1.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://moses-john-1.github.io/wdd231/chamber/discover.html" />
 
-    <title>Uyo Chamber | Directory</title>
+    <title>Discover Uyo | Uyo Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.webp" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css"/>
-    <link rel="stylesheet" href="styles/small.css"/>
-    <link rel="stylesheet" href="styles/large.css"/>
-    <script src="scripts/directory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/discover.js" defer></script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/favicon.webp" alt="web page logo" width="50" height="50">
+            <img src="images/favicon.webp" alt="web page logo" width="50" height="50" />
             <h2>Uyo Chamber of Commerce</h2>
         </div>
         <nav>
             <button id="menu-toggle" aria-label="Open navigation menu">&#9776;</button>
             <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Business Directory</h1>
+    <!-- Main Discover Content -->
+    <main id="discover-main">
+        <aside id="visitor-message" class="sidebar-area"></aside>
 
-        <!-- View Toggle Buttons -->
-        <div class="view-toggle">
-            <button id="grid-btn" class="active">Grid View</button>
-            <button id="list-btn">List View</button>
-        </div>
-
-        <!-- Members container -->
-        <section id="directory" class="directory grid-view">
+        <section id="card-grid" class="cards-area">
+            <!-- JS will inject 8 location cards here -->
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-contact">

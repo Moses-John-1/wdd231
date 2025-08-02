@@ -568,7 +568,7 @@ select:focus {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 128, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -635,6 +635,168 @@ select:focus {
 .form-summary p {
     margin-bottom: 0.75rem;
     font-weight: 500;
+}
+
+/* DISCOVER PAGE */
+
+#visitor-message {
+    color: #007A3D;
+    padding: 1rem;
+    margin: 1rem;
+    border-left: 5px solid #007A3D;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+
+}
+
+#card-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.location-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location-card h2 {
+    color: #007A3D;
+    margin-bottom: 0.5rem;
+    padding: 2px 15px;
+}
+
+.location-card figure {
+    margin: 0;
+
+}
+
+.location-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.location-card figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    padding: 2px 15px;
+}
+
+.location-card p {
+    padding: 2px 15px;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.discover-btn {
+    display: inline-block;
+    background-color: #007A3D;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 600;
+    padding: 10px 25px;
+    width: 100%;
+}
+
+.discover-btn:hover {
+    background-color: #005f2a;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    #card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .location-card {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image address"
+            "button button";
+        grid-template-columns: 250px 1fr;
+        gap: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+    }
+
+    .location-card h2 {
+        grid-area: title;
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0;
+        color: #007A3D;
+    }
+
+    .location-card figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+    .location-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .location-card p {
+        grid-area: desc;
+        font-size: 0.95rem;
+        margin: 0;
+        color: #333;
+    }
+
+    .location-card figcaption {
+        grid-area: address;
+        font-size: 0.85rem;
+        color: #444;
+        font-style: italic;
+        margin: 0;
+    }
+
+    .location-card .discover-btn {
+        grid-area: button;
+        background-color: #005f2a;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-top: 10px;
+        justify-self: start;
+        transition: background-color 0.3s ease;
+    }
+
+    .location-card .discover-btn:hover {
+        background-color: #064221;
+    }
+
+    .location-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .location-card img:hover {
+        transform: scale(1.1);
+    }
 }
 
 /* FOOTER SECTION */

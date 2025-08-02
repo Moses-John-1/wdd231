@@ -1,0 +1,52 @@
+{
+    "locations": [
+        {
+            "name": "Ibeno Beach",
+            "address": "Ibeno, Akwa Ibom",
+            "description": "One of the longest beaches in West Africa, known for its peaceful environment, ocean breeze, and soft white sand ideal for relaxation.",
+            "image": "Ibeono-beach.webp"
+        },
+        {
+            "name": "Oron Museum",
+            "address": "Oron, Akwa Ibom",
+            "description": "Historic museum showcasing Ekpu wood carvings, traditional relics, and colonial artifacts from the rich cultural history of the Oron people.",
+            "image": "oron-museum.webp"
+        },
+        {
+            "name": "Slave Bridge",
+            "address": "Ikot Abasi, Akwa Ibom",
+            "description": "A historic site where slaves were led to ships, featuring preserved dungeons and a symbolic bridge with deep emotional and historical significance.",
+            "image": "Bridge-of-no-return.webp"
+        },
+        {
+            "name": "Ibom Plaza",
+            "address": "Ikot Ekpene Rd, Uyo, Akwa Ibom",
+            "description": "Urban square with an open-air theatre, beautiful fountain, and the iconic Ibom Connection monument attracting locals and tourists alike.",
+            "image": "Ibom_Plaza.webp"
+        },
+        {
+            "name": "Four Points Hotel",
+            "address": "Ikot Ekpene, Akwa Ibom",
+            "description": "Premium hotel by Sheraton offering luxury rooms, fine dining, event spaces, and a relaxing atmosphere in the heart of Ikot Ekpene.",
+            "image": "Four-point.webp"
+        },
+        {
+            "name": "Worship Centre",
+            "address": "Udo Udoma Ave, Uyo, Akwa Ibom",
+            "description": "One of the largest worship halls in southern Nigeria, known for vibrant services, gospel events, and massive Christian gatherings.",
+            "image": "Ibom-worship-ceneter.webp"
+        },
+        {
+            "name": "Dakada Tower",
+            "address": "Nwaniba Rd, Uyo, Akwa Ibom",
+            "description": "Modern high-rise building symbolizing Akwa Ibom's economic growth, located in a fast-developing district of Uyo city.",
+            "image": "Dakada-tower.webp"
+        },
+        {
+            "name": "Akpabio Stadium",
+            "address": "Ikot Ekpene Rd, Uyo, Akwa Ibom",
+            "description": "International-standard stadium with 30,000 seats, used for football matches, concerts, athletics, and national events in Uyo.",
+            "image": "Ibom-stadium.webp"
+        }
+    ]
+}
