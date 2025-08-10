@@ -73,3 +73,12 @@ hamburger.addEventListener('click', () => {
         hamburgerIcon.classList.add('fa-bars'); // Menu icon
     }
 });
+
+const yearElements = document.querySelectorAll('.year');
+const currentYear = new Date().getFullYear();
+yearElements.forEach(el => el.textContent = currentYear);
+
+const lastModifiedElement = document.getElementById('lastModified');
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = document.lastModified;
+}

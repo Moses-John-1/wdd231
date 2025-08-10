@@ -6,8 +6,6 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = document.lastModified;
 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
@@ -25,3 +23,13 @@ hamburger.addEventListener('click', () => {
         hamburgerIcon.classList.add('fa-bars'); // Menu icon
     }
 });
+
+
+const yearElements = document.querySelectorAll('.year');
+const currentYear = new Date().getFullYear();
+yearElements.forEach(el => el.textContent = currentYear);
+
+const lastModifiedElement = document.getElementById('lastModified');
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = document.lastModified;
+}

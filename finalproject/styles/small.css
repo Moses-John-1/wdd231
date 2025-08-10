@@ -258,7 +258,6 @@
 
         .section-three a:hover {
             background: rgba(255, 0, 0, 0.589);
-            scale: 2px;
             transform: scale(1.1);
         }
 
