@@ -46,6 +46,7 @@
             font-size: 1.2rem;
             padding-top: 5px;
             padding-bottom: 5px;
+            gap: 10px;
         }
 
         .navigation ul {
@@ -111,6 +112,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 20px;
             background-image: url(../images/wallstreet.jpg);
             background-color: rgba(250, 4, 4, 0.9);
             background-blend-mode: darken;
@@ -122,16 +124,17 @@
 
         .caption1 {
             color: var(--secondry-color);
-            font-size: 4rem;
+            font-size: 2rem;
+            text-shadow: var(--text-shadow);
         }
 
         .caption2 {
             color: var(--text-color);
-            font-size: 6rem;
+            font-size: 3rem;
         }
 
         .caption3 {
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
 
         .stocks-card {
@@ -154,7 +157,7 @@
         .stocks-card .microsoft,
         .stocks-card .nvidia {
             padding: 50px;
-            width: 350px;
+            width: fit-content;
             box-shadow: 0 1px 4px rgb(191, 4, 4, 0.6);
         }
 
@@ -214,13 +217,14 @@
             padding: 10px;
             border-radius: 30px;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1rem;
+            text-shadow: 0 2px 5px rgb(0, 0, 0);
 
         }
 
 
         .section-three {
-            height: 350px;
+            min-height: 350px;
             background-image: url(../images/contaact.webp);
             background-color: rgba(250, 4, 4, 0.5);
             background-blend-mode: darken;
@@ -229,10 +233,10 @@
             justify-content: center;
             align-items: flex-end;
             gap: 20px;
-            padding: 10px 40px;
+            padding: 10px 15px;
             margin: 20px 0;
             color: var(--text-color);
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             flex-wrap: wrap;
         }
 

@@ -1,4 +1,18 @@
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+    .caption1 {
+        color: var(--secondry-color);
+        font-size: 4rem;
+    }
+
+    .caption2 {
+        color: var(--text-color);
+        font-size: 6rem;
+    }
+
+    .caption3 {
+        font-size: 1.5rem;
+    }
+
     .hamburger {
         display: none;
     }
@@ -21,6 +35,11 @@
         flex-wrap: nowrap;
         color: var(--secondry-color);
         padding: 20px 0;
+    }
+
+    .market-summary {
+        font-size: 2rem;
+
     }
 
     .terms-cards {
