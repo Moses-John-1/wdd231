@@ -122,7 +122,6 @@
         }
 
         .stocks-card img {
-            display: block;
             margin: auto;
             margin-bottom: 20px;
 
@@ -132,7 +131,7 @@
         .stocks-card .microsoft,
         .stocks-card .nvidia {
             padding: 50px;
-            width: 300px;
+            width: 350px;
             box-shadow: 0 1px 4px rgb(191, 4, 4, 0.6);
         }
 
@@ -459,6 +458,165 @@
 
         .useful-links ul li a:hover {
             background-color: var(--secondry-color);
+        }
+
+        /* LEARN PAGE */
+        .learn-heading {
+            margin: 40px 40px;
+        }
+
+        .learn-heading div {
+            font-family: Cabin-semi-bold, Cabin-fallback, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            color: var(--secondry-color);
+            margin-bottom: 10px;
+        }
+
+        .learn-heading h1 {
+            margin-bottom: 10px;
+            font-family: Cabin-semi-bold, Cabin-fallback, sans-serif;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 52.8px;
+            color: rgb(17, 17, 17);
+        }
+
+        .learn-heading p {
+            font-family: SourceSansPro, "Source Sans Pro-fallback", sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 36px;
+            color: rgb(102, 102, 102);
+        }
+
+        .learn-image-sec {
+            background-color: #000;
+            margin: 40px 40px;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            color: var(--text-color);
+
+        }
+        #breifing{
+            font-size: 17px;
+        }
+
+        .learn-image-sec h3 {
+            background-color: #1f1f1f;
+            font-size: 20px;
+            margin: 20px 0;
+            padding: 40px;
+        }
+
+        .learn-terms-sec {
+            background-color: var(--secondry-color);
+        }
+
+        .terms-cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 0 40px;
+            padding-bottom: 20px;
+        }
+
+        .learn-terms-sec>p {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 40px;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+        }
+
+        .defination {
+            color: rgb(119, 119, 119);
+            font-style: italic;
+        }
+
+        .terms-cards h3 {
+            text-shadow: 1px 1px 3px rgba(252, 6, 6, 0.3);
+        }
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: #fafafa;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 10px 10px 0 black;
+        }
+
+        .learn-image-sec img {
+            width: 70vw;
+        }
+
+        .learn-image-sec p {
+            background-color: #1f1f1f;
+            padding: 20px;
+            font-size: 10px;
+
+        }
+
+        .faq-container {
+            width: 92vw;
+            margin: 40px auto;
+            border: 1px solid var(--secondry-color);
+            padding: 20px;
+            background: white;
+        }
+
+        .faq-container h2 {
+            margin-bottom: 15px;
+        }
+
+        .faq-item {
+            border-top: 1px solid var(--secondry-color);
+        }
+
+        .faq-item:first-child {
+            border-top: none;
+        }
+
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .faq-question::after {
+            content: '\25BC';
+            position: absolute;
+            right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 15px;
+        }
+
+        .faq-answer p {
+            margin: 10px 0;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 200px;
+            padding-bottom: 10px;
         }
 
         .small-footer {
