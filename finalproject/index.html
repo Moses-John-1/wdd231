@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/index.js" defer></script>
 </head>
 
@@ -29,12 +30,17 @@
         </div>
         <nav>
             <div class="navigation">
-                <ul>
+
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
                     <li><a href="contact.html">Contacts</a></li>
                 </ul>
-                <div>
+                <div id="search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="search" placeholder="search market"><button id="search-btn">search</button>
                 </div>
@@ -99,9 +105,7 @@
         </div>
     </section>
     <section class="section-three">
-        <div>
-            <h3>Wanna Talk To Us?</h3>
-        </div>
+        <h3>Wanna Talk To Us?</h3>
         <a href="contacts.html">Contacts Us</a>
 
     </section>

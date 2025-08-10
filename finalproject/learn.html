@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/learn.js" defer></script>
 </head>
 
@@ -28,12 +29,17 @@
         </div>
         <nav>
             <div class="navigation">
-                <ul>
+
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
                     <li><a href="contact.html">Contacts</a></li>
                 </ul>
-                <div>
+                <div id="search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="search" placeholder="search market"><button id="search-btn">search</button>
                 </div>
@@ -52,8 +58,9 @@
 
         <div class="learn-image-sec">
             <h3>Short-term dips are normal — over time, the stock market has historically trended upward.</h3>
-            <img src="images/sp500.webp" alt="sp500">
-            <p id="breifing">The stock market's history—through the Great Depression (1929, severe crash but recovery began in the
+            <img src="images/sp500.webp" alt="sp500" loading="lazy" height="300">
+            <p id="breifing">The stock market's history—through the Great Depression (1929, severe crash but recovery
+                began in the
                 late 1930s), the
                 oil crisis (1973, sharp drop followed by late '70s growth), the dot-com crash (2000, tech bubble burst
                 but markets
@@ -129,25 +136,30 @@
             <div class="faq-item">
                 <div class="faq-question">Can I start investing with $1000?</div>
                 <div class="faq-answer">
-                    <p>Yes, You can start investing with just a small amount of money since many brokerages now have no minimum deposit requirement
-                    and charge zero commission on trades. With the introduction of fractional shares, it’s even possible to buy a portion of
-                    a stock that costs hundreds or even thousands of dollars per share.</p>
+                    <p>Yes, You can start investing with just a small amount of money since many brokerages now have no
+                        minimum deposit requirement
+                        and charge zero commission on trades. With the introduction of fractional shares, it’s even
+                        possible to buy a portion of
+                        a stock that costs hundreds or even thousands of dollars per share.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How do I invest in stocks?</div>
                 <div class="faq-answer">
-                    <p>You can invest in stocks by opening an account with a brokerage, adding funds, and buying shares of companies you
-                    believe in. Many beginners start with exchange-traded funds (ETFs) for instant diversification.</p>
+                    <p>You can invest in stocks by opening an account with a brokerage, adding funds, and buying shares
+                        of companies you
+                        believe in. Many beginners start with exchange-traded funds (ETFs) for instant diversification.
+                    </p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How can I invest with no money?</div>
                 <div class="faq-answer">
-                    <p>If you don’t have money to invest right now, focus on building your savings first. You can also explore investing
-                    platforms that offer sign-up bonuses, stock rewards, or fractional shares with small deposits.
+                    <p>If you don’t have money to invest right now, focus on building your savings first. You can also
+                        explore investing
+                        platforms that offer sign-up bonuses, stock rewards, or fractional shares with small deposits.
                     </p>
                 </div>
             </div>
@@ -155,25 +167,29 @@
             <div class="faq-item">
                 <div class="faq-question">Why should I invest?</div>
                 <div class="faq-answer">
-                    <p>Investing helps your money grow over time, outpacing inflation and building wealth for future goals like buying a home
-                    or retiring comfortably.</p>
+                    <p>Investing helps your money grow over time, outpacing inflation and building wealth for future
+                        goals like buying a home
+                        or retiring comfortably.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">When should I start investing?</div>
                 <div class="faq-answer">
-                    <p>The best time to start investing is as soon as possible. The earlier you begin, the more time your money has to grow
-                    through the power of compounding.</p>
+                    <p>The best time to start investing is as soon as possible. The earlier you begin, the more time
+                        your money has to grow
+                        through the power of compounding.</p>
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">What time does the stock market open and close?</div>
                 <div class="faq-answer">
-                    <p>The U.S. stock market is generally open from 9:30 AM to 4:00 PM EST, Monday through Friday except on market holidays.
-                    If you are outside the U.S., your local stock exchange will follow its own trading hours, which are based on your
-                    country’s time zone.</p>
+                    <p>The U.S. stock market is generally open from 9:30 AM to 4:00 PM EST, Monday through Friday except
+                        on market holidays.
+                        If you are outside the U.S., your local stock exchange will follow its own trading hours, which
+                        are based on your
+                        country’s time zone.</p>
                 </div>
             </div>
         </div>

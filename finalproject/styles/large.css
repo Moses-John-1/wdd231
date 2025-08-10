@@ -1,0 +1,39 @@
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex !important;
+        flex-direction: row;
+        background: none;
+        width: auto;
+    }
+
+    .navigation ul li a {
+        padding: 5px 40px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        color: var(--secondry-color);
+        padding: 20px 0;
+    }
+
+    .terms-cards {
+        flex-wrap: nowrap;
+    }
+
+    textarea {
+        width: 40vw;
+        height: 8vw;
+    }
+
+    form input {
+        width: 40vw;
+        height: 5vh;
+    }
+}

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/contact.js" defer></script>
 </head>
 
@@ -28,12 +29,18 @@
         </div>
         <nav>
             <div class="navigation">
-                <ul>
+
+                <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <ul id="nav-links">
+
                     <li><a href="index.html">Home</a></li>
                     <li><a href="learn.html">Learn</a></li>
                     <li><a href="contact.html">Contacts</a></li>
                 </ul>
-                <div>
+                <div id="search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="search" placeholder="search market"><button id="search-btn">search</button>
                 </div>
@@ -54,7 +61,8 @@
             <p><i class="fa-solid fa-location-arrow"></i>No.1 , No adress, Lagos Nigeria</p>
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.7134836923665!2d7.9574628740380575!3d4.98719323910932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067f798b6e955d3%3A0x2abe6b89e61ce97e!2sShelter%20Afrique%20Estate%20Road%204%20house%20B19!5e0!3m2!1sen!2sng!4v1754698291995!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.7134836923665!2d7.9574628740380575!3d4.98719323910932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067f798b6e955d3%3A0x2abe6b89e61ce97e!2sShelter%20Afrique%20Estate%20Road%204%20house%20B19!5e0!3m2!1sen!2sng!4v1754698291995!5m2!1sen!2sng"
+                    style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -66,7 +74,7 @@
                 <input type="text" class="name" required name="firstName">
 
                 <label for="email">Email<span>*</span></label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required placeholder="example@gmail.com">
 
                 <label for="subject">Subject</label>
                 <input type="text" name="subject" id="subject">
