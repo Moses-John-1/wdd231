@@ -560,6 +560,11 @@
             padding: 20px;
             box-shadow: 10px 10px 0 black;
         }
+        .volume,
+        .price,
+        .change{
+            font-size: 17px;
+        }
 
         .learn-image-sec img {
             width: 70vw;
@@ -662,11 +667,21 @@
             padding: 10px 40px;
         }
 
-        .small-footer p {
+        .small-footer a {
             font-family: "Open Sans", sans-serif;
             font-size: 16px;
             font-weight: 400;
             line-height: 27.2px;
+            color: rgb(131, 131, 131);
+            text-decoration: none;
+        }
+
+        .small-footer a:hover {
+            color: #fafafa;
+            transform: scale(1.1);
+        }
+
+        .year {
             color: rgb(131, 131, 131);
         }
 
