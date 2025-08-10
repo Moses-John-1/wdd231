@@ -311,7 +311,7 @@
 
         .main-contact {
             height: 20vh;
-            background-image: url(/finalproject/images/contactBg.webp);
+            background-image: url(../images/contactBg.webp);
             background-size: cover;
             background-position: center;
             background-color: rgba(12, 0, 0, 0.7);
@@ -400,7 +400,7 @@
 
         form input {
             width: 85vw;
-            height: 40px;
+            height: 8vh;
             margin-bottom: 10px;
             border: 1px solid rgb(219, 219, 219);
             padding: 10px;
