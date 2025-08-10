@@ -111,7 +111,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-image: url(/finalproject/images/wallstreet.jpg);
+            background-image: url(../images/wallstreet.jpg);
             background-color: rgba(250, 4, 4, 0.9);
             background-blend-mode: darken;
             height: 400px;
@@ -221,7 +221,7 @@
 
         .section-three {
             height: 350px;
-            background-image: url(/finalproject/images/contaact.webp);
+            background-image: url(../images/contaact.webp);
             background-color: rgba(250, 4, 4, 0.5);
             background-blend-mode: darken;
             background-size: cover;
